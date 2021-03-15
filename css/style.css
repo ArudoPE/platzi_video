@@ -1,0 +1,96 @@
+/*RESET*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*SHARED*/
+body {
+    background-color: var(--main-bg-color);
+    font-family: muli, sans-serif;
+    color: var(--almost-white);
+}
+:root {
+    --main-bg-color: rgb(131,77,252);
+    --almost-white: rgb(247, 245, 245);
+}
+.flex {
+    display: flex;
+}
+/*HEADER*/
+.header__nav {
+    background-color: var(--main-bg-color);
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.header__nav .header__logo-container img {
+    width: 150px;
+}
+.header__nav .header__profile {
+    color: var(--almost-white);
+    font-weight: bold;
+    align-items: center;
+    column-gap: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+}
+.header__nav .header__profile:hover .header__hover--menu  {
+    display: block;
+}
+.header__nav .header__profile--image img {
+    width: 30px;
+}
+.header__hover--menu {
+    text-align: right;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    padding-top: 10px;
+    display: none;
+}
+.header__hover--menu li {
+    list-style: none;
+    padding: 5px;
+    width: 110px;
+}
+.header__hover--menu li:hover {
+    transition-duration: 1s;
+    transition: rgb(111, 44, 255);
+    background-color: rgb(111, 44, 255);
+}
+.header__hover--menu a {
+    text-decoration: none;
+    color: var(--almost-white);
+}
+.header__hover--menu a:hover {
+    text-decoration: underline;
+}
+/*MAIN*/
+.main__search-section {
+    flex-direction: column;
+    align-items: center;
+}
+.main__search-section .search--title-container h2 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+.main__search-section .search--input-container {
+    border: solid 2px var(--almost-white);
+    border-radius: 15px;
+    background-color: rgb(160, 117, 253);
+    width: 80%;
+}
+.main__search-section .search--input-container input {
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    color: white;
+}
+.main__search-section .search--input-container input::placeholder {
+    color: white;
+    font-weight: bold;
+}
