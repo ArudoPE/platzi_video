@@ -94,3 +94,93 @@ body {
     color: white;
     font-weight: bold;
 }
+/*MAIN__CAROUSEL--SECTION*/
+.main__carousel--list {
+    margin-top: 10vh;
+    gap: 20px;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    overflow-x: scroll;
+    height: 300px;
+}
+.main__carousel--list h2 {
+    display: block;
+    width: 100%;
+    padding-left: 40px;
+    padding-bottom: 10px;
+    position: absolute;
+    top: 225px;
+}
+.main__carousel--list-card {
+    min-width: 150px;
+    width: 150px;
+    height: 200px;
+    position: relative;
+    cursor: pointer;
+}
+.main__carousel--list-card .card__overlay {
+    background-color: rgba(131,77,252,0.6);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+}
+.main__carousel--list-card .main__carousel__card--img-container {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.main__carousel--list-card .list1 {
+    background-image: url('../assets/img/list1.jpg');
+}
+.main__carousel--list-card .list2 {
+    background-image: url('../assets/img/list2.jpg');
+}
+.main__carousel--list-card .list3 {
+    background-image: url('../assets/img/list3.jpg');
+}
+.main__carousel--list-card .list4 {
+    background-image: url('../assets/img/list4.jpg');
+}
+.main__carousel--list-card .list5 {
+    background-image: url('../assets/img/list5.jpg');
+}
+.main__carousel--list-card .list6 {
+    background-image: url('../assets/img/list6.jpg');
+}
+.main__carousel--list-card .list7 {
+    background-image: url('../assets/img/list7.jpg');
+}
+.main__carousel--list-card .card__hover-container {
+    display: none;
+    position: absolute;
+    background-color: rgba(0,0,0,0.3);
+    padding: 10px;
+    width: 150px;
+    border-radius: 0 0 10px 10px;
+    bottom: 0;
+}
+.main__carousel--list-card .card__hover-container img {
+    width: 20px;
+    margin-bottom: 4px;
+}
+.main__carousel--list-card .card__hover-container p {
+    margin-top: 4px;
+    font-size: 12px;
+}
+.main__carousel--list-card:hover .card__hover-container {
+    display: block;
+}
+.main__carousel--list-card:hover {
+    transform: scale(1.3);
+    transition: transform 1s;
+    z-index: 1;
+}
+.main__carousel--list-card:hover .card__overlay {
+    display: none;
+}
