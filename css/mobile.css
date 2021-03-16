@@ -4,4 +4,8 @@
         position: relative;
         bottom: 2px;
     }
+    .header__hover--menu li {
+    background-color: rgb(111, 44, 255);
+    border: 1px solid white;
+    }
 }
