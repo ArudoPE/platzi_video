@@ -8,4 +8,16 @@
     background-color: rgb(111, 44, 255);
     border: 1px solid white;
     }
+    .error-main {
+        align-items: flex-start;
+    }
+    .error-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .error-main .error-section .left-container img {
+        width: 300px;
+        position: relative;
+        left: 15px;
+    }
 }
